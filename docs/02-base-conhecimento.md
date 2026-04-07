@@ -3,6 +3,7 @@
 ## Dados Utilizados
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
+O agente utilizou apenas dados mockados criados para simular diferentes cenários de gastos e rendimentos dos usuários. não foram utilizados arquivos externos da pasta 'data'.
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
@@ -20,28 +21,37 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Os dados utilizados são fictícios (mockados) e representam diferentes cenários de gastos e rendimentos de usuários. Eles foram criados para testar as funcionalidades do agente e garantir que ele consiga fornecer recomendações financeiras realistas.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+Oagente acessa a base de conhecimento por meio de dados mockados armazenados em arquivos locais ou diretamente em variáveis no código. Ele lê essas informações para analisar padrões de gastos e gerar recomendações financeiras.
 
 [ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Os dados mockados são incorporados no system prompt, permitindo que o agente utilize essas informações como referência fixa para gerar respostas e recomendações financeiras.
 
 ---
 
 ## Exemplo de Contexto Montado
 
 > Mostre um exemplo de como os dados são formatados para o agente.
-
+ Dados do clinte: 
+ Usuário: Felipe Melo
+ Renda mensal: R$ 4000
+ Despesas:
+ - Alimentação: R$ 1200
+ - Transporte: R$ 500
+ - Lazer: R$ 300
+ - Moradia: R$ 1500
+ Objetivo: Economizar R$ 500 por mês
+ 
 ```
 Dados do Cliente:
 - Nome: João Silva
